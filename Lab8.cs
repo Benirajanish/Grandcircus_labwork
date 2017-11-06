@@ -49,8 +49,8 @@ namespace Lab8_Collections_Menu
                     Console.Write("\nPlease enter the animal you would like to add to your Cart!\nEnter Animal Name or Item #: ");
 
                     string selection = Console.ReadLine().ToLower();
-
-                    if (menu.ContainsKey(selection))
+                ArrayList fruits = new ArrayList();
+                if (menu.ContainsKey(selection))
                     {
                         Console.Write("How many would you like? ");
                         int.TryParse(Console.ReadLine(), out int itemQuantity);
